@@ -84,4 +84,8 @@ main {
         width: 1080px;
         height: 1920px;
     }
+
+    .reelWindow.play {
+        background-color: red;
+    }
 }

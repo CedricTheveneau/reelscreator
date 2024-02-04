@@ -2,6 +2,8 @@ const playBtn = document.querySelector(".startAnimation");
 const stopBtn = document.querySelector(".stopAnimation");
 const reelWindow = document.querySelector(".reelWindow");
 
+console.log(playBtn, stopBtn, reelWindow);
+
 const startAnimation = () => {
   reelWindow.classList.add("play");
 };
