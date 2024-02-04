@@ -1,0 +1,87 @@
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+/* Variables definition */
+:root {
+    --dark: #141414;
+    --dark-50: #14141480;
+    --light: #F9F9F9;
+    --light-50: #F9F9F980;
+    --accent: #B0ABED;
+    --font-family: 'Oswald', sans-serif;
+    --font-weight-black: 700;
+    --font-weight-bold: 500;
+}
+
+/* Scene setup */
+* {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow: hidden;
+}
+
+main {
+    background-color: var(--dark);
+    height: 100dvh;
+    display: flex;
+
+    >.col {
+        width: 30%;
+        display: grid;
+        gap: 10px;
+        align-items: start;
+        align-content: start;
+        justify-content: center;
+    }
+
+    h1,
+    h3,
+    .reelWindow {
+        margin: auto;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    h1 {
+        color: var(--light);
+        font-weight: var(--font-weight-black);
+        font-size: 191px;
+    }
+
+    h3 {
+        color: var(--light-50);
+        font-weight: var(--font-weight-bold);
+        font-size: 80px;
+    }
+
+    .startAnimation,
+    .stopAnimation {
+        font-size: 60px;
+        color: var(--dark);
+        font-weight: var(--font-weight-bold);
+        background-color: var(--accent);
+        border: transparent;
+        padding: 10px 15px;
+        border-radius: 15px;
+        width: fit-content;
+        cursor: pointer;
+        transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+    }
+
+    .startAnimation:hover,
+    .stopAnimation:hover {
+        color: var(--accent);
+        background-color: var(--dark);
+    }
+
+    .reelWindow {
+        background-color: lightcoral;
+        width: 1080px;
+        height: 1920px;
+    }
+}
